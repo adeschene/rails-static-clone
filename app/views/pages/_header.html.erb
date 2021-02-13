@@ -10,22 +10,32 @@
   <%= link_to 'CONTACT', contact_path, class: 'site-nav-link vert-divider-left' %>
 </div>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <%= link_to "ATLAS PIZZA", root_path, class: 'navbar-brand' %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerLinks" aria-controls="navbarTogglerLinks" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerLinks">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+<nav class="navbar-ap navbar-expand-lg">
+  <div class="navbar-container-ap">
+    <div class="navbar-header-ap">
+      <div class="navbar-brand-container">
+        <%= link_to "ATLAS PIZZA", root_path, class: 'navbar-brand-link' %>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerLinks" aria-controls="navbarTogglerLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse-ap" id="navbarTogglerLinks">
+      <ul class="navbar-nav-ap">
+        <li class="nav-item-ap">
+          <%= link_to "ORDER ONLINE", root_path, class: "nav-link-ap" %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item-ap">
+          <%= link_to "Menu", menu_path, class: "nav-link-ap" %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item-ap">
+          <%= link_to "Community", community_path, class: "nav-link-ap" %>
+        </li>
+        <li class="nav-item-ap">
+          <%= link_to "Catering", catering_path, class: "nav-link-ap" %>
+        </li>
+        <li class="nav-item-ap">
+          <%= link_to "Contact", contact_path, class: "nav-link-ap" %>
         </li>
       </ul>
     </div>

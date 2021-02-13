@@ -34,36 +34,98 @@ $ap-cream:  #fede67;
   }
 }
 
-.navbar-default {
+.navbar-ap {
   background: $ap-green;
   font-weight: bold;
   min-height: 50px;
   margin-bottom: 20px;
   padding: 0;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
 
   @media only screen and (min-width: 768px) {
     display: none;
   }
 
-  .navbar-brand {
-    font-family: 'Voltaire', sans-serif;
-    font-size: 24px;
-    color: $ap-yellow;
-  }
+  .navbar-container-ap {
+    min-height: 50px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
 
-  .navbar-toggler {
-    border-color: #333333;
-    padding: 4px 7px;
-    box-shadow: none;
+    .navbar-header-ap {
+      margin: 0 -15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
 
-    &:hover {
-      background: $ap-dgreen;
+      .navbar-brand-container {
+        height: 50px;
+        padding: 15px;
+        line-height: 20px;
+
+        .navbar-brand-link {
+          font-family: 'Voltaire', sans-serif;
+          font-size: 24px;
+          color: $ap-yellow;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .navbar-toggler {
+        border-color: #333333;
+        padding: 5px 8px;
+        box-shadow: none;
+        margin-right: -15px;
+
+        &:hover, &:focus {
+          background: $ap-dgreen;
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 222, 103, 1)' stroke-width='2.25' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+          width: 26px;
+          height: 22px;
+        }
+      }
     }
 
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 222, 103, 1)' stroke-width='2.25' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-      height: 26px;
+    #navbarTogglerLinks {
+      border-top: 1px solid $ap-cream;
+      margin: 0 -15px;
+
+      .navbar-nav-ap {
+        float: right;
+        margin: 7.5px 0 7.5px -15px;
+        list-style: none;
+        padding-left: 0;
+
+        .nav-item-ap {
+          float: none;
+          width: 100%;
+          padding: 4.5px 0;
+
+          &:hover {
+            background: $ap-dgreen;
+          }
+
+          .nav-link-ap {
+            color: $ap-cream;
+            text-decoration: none;
+            padding: 10px 15px;
+            line-height: 20px;
+          }
+        }
+      }
     }
   }
 }
