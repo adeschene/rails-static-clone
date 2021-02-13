@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+/* Create sunburst effect for background */
+body {
+  background: none;
+  line-height: 1.42857143;
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+.sunburst {
+  background-image: url('bg-green-stripes.gif');
+  background-position: top;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.ap-yellow-bg {
+  background: #ffd204;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

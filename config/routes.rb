@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'pages#home'
+  
+  get '/menu', to: 'pages#menu', as: 'menu'
+  get '/community', to: 'pages#community', as: 'community'
+  get '/catering', to: 'pages#catering', as: 'catering'
+  get '/contact', to: 'pages#contact', as: 'contact'
+  get '/partners', to: 'pages#partners', as: 'partners'
+  get '/privacy', to: 'pages#privacy', as: 'privacy'
 end
