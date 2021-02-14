@@ -24,20 +24,16 @@ body {
 }
 
 .sunburst {
-  background-image: url('bg-green-stripes.gif');
-  background-position: top;
+  background: url('bg-green-stripes.gif') no-repeat center top fixed;
   background-size: cover;
   min-height: 100%;
-}
-
-.ap-yellow-bg {
-  background: #ffd204;
 }
 
 .container {
   max-width: 100%;
   padding: 0;
   margin: 0 auto;
+  background: #ffd204;
 }
 
 @media (min-width: 768px) {

@@ -1,8 +1,10 @@
+// Atlas Pizza's color palate
 $ap-green:  #4d731d;
 $ap-dgreen: #1f4718;
 $ap-yellow: #ffd204;
 $ap-cream:  #fede67;
 
+// Logo and links showed on large screens
 .site-nav {
   font-family: 'Voltaire', sans-serif;
   padding-bottom: 10px;
@@ -27,13 +29,21 @@ $ap-cream:  #fede67;
     }
   }
 
+  // Add vertical divider line to links
   .vert-divider-left {
-    margin-left: 10px;
+    margin-left: 13px;
     padding-left: 10px;
     border-left: 1px solid black;
   }
+
+  // Additional spacing for last link element
+  .site-nav-last-link {
+    margin-right: 10px;
+  }
 }
 
+// Navbar shown on small screens
+// Custom navbar to match old bootstrap version
 .navbar-ap {
   background: $ap-green;
   font-weight: bold;
@@ -46,10 +56,12 @@ $ap-cream:  #fede67;
   right: 0;
   display: block;
 
+  // Don't display at all on larger screens
   @media only screen and (min-width: 768px) {
     display: none;
   }
 
+  // Holds the logo, toggle btn, and dropdown links
   .navbar-container-ap {
     min-height: 50px;
     padding: 0 15px;
@@ -57,6 +69,7 @@ $ap-cream:  #fede67;
     display: block;
     width: 100%;
 
+    // Holds logo and toggle btn
     .navbar-header-ap {
       margin: 0 -15px;
       display: flex;
@@ -64,6 +77,7 @@ $ap-cream:  #fede67;
       justify-content: space-between;
       width: 100%;
 
+      // Holds the brand logo link
       .navbar-brand-container {
         height: 50px;
         padding: 15px;
@@ -81,16 +95,19 @@ $ap-cream:  #fede67;
         }
       }
 
+      // Navbar toggler btn
       .navbar-toggler {
         border-color: #333333;
         padding: 5px 8px;
         box-shadow: none;
         margin-right: -15px;
 
+        // &:focus keeps hover effects after click
         &:hover, &:focus {
           background: $ap-dgreen;
         }
 
+        // Slightly customized hamburger icon
         .navbar-toggler-icon {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 222, 103, 1)' stroke-width='2.25' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
           width: 26px;
@@ -99,19 +116,23 @@ $ap-cream:  #fede67;
       }
     }
 
+    // Holds collabsible dropdown nav links
     #navbarTogglerLinks {
       border-top: 1px solid $ap-cream;
       margin: 0 -15px;
 
+      // Replacement for 'float: right' because it broke collapse animation
       .nav-list-container {
         display: flex;
         justify-content: flex-end;
 
+        // ul holding nav links
         .navbar-nav-ap {
           margin: 7.5px 0 7.5px -15px;
           list-style: none;
           padding-left: 0;
 
+          // Container for nav links
           .nav-item-ap {
             width: 100%;
             padding: 4.5px 0;
@@ -130,5 +151,31 @@ $ap-cream:  #fede67;
         }
       }
     }
+  }
+}
+
+// Rows on page, vertical tile layout
+.row {
+
+  .col-xs-12 {
+    padding-left: 13px;
+    padding-right: 15px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding-left: 12px;
+    }
+  }
+
+  .col-md-8 {
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  .col-md-2 {
+    min-height: 1px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

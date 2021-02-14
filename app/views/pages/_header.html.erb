@@ -2,12 +2,13 @@
 
 <div class="site-nav text-center">
   <%= link_to root_path do %>
-    <%= image_tag 'banner.png', class: "img-fluid mt-4" %>
+    <br>
+    <%= image_tag 'banner.png', class: "img-fluid" %>
   <% end %>
   <%= link_to 'MENU', menu_path, class: 'site-nav-link' %>
   <%= link_to 'COMMUNITY', community_path, class: 'site-nav-link vert-divider-left' %>
   <%= link_to 'CATERING', catering_path, class: 'site-nav-link vert-divider-left' %>
-  <%= link_to 'CONTACT', contact_path, class: 'site-nav-link vert-divider-left' %>
+  <%= link_to 'CONTACT', contact_path, class: 'site-nav-link vert-divider-left site-nav-last-link' %>
 </div>
 
 <nav class="navbar-ap navbar-expand-lg">
