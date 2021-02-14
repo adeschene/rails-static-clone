@@ -160,13 +160,11 @@ $ap-cream:  #fede67;
     margin: 0;
   }
 
-
   .col-xs-12 {
-    padding-left: 13px;
+    padding-left: 15px;
     padding-right: 15px;
 
     @media (min-width: 768px) and (max-width: 991px) {
-      padding-left: 12px;
       width: 100%;
     }
   }
@@ -232,8 +230,26 @@ $ap-cream:  #fede67;
 }
 
 .menu-pizza-img {
-  border: 1px solid #4a7214;
+  border: 1px solid $ap-green;
   width: 100%;
+}
+
+// Community page specific classes
+.collage-img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.collage-link {
+  text-decoration: none;
+  color: $ap-green;
+
+  &:hover {
+    color: $ap-green;
+    text-decoration: underline;
+  }
 }
 
 // Miscellaneous classes
