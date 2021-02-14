@@ -36,6 +36,12 @@ body {
   background: #ffd204;
 }
 
+@media (max-width: 767px) {
+  .container {
+    margin-top: 32px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
