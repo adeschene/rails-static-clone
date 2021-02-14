@@ -25,3 +25,152 @@
   </div>
   <div class="col-md-2"></div>
 </div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-xs-12 col-md-6">
+    <br>
+    <div id="pizza-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag 'pizza_carousel/1', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'pizza_carousel/2', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'pizza_carousel/3', class: 'd-block w-100' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'pizza_carousel/4', class: 'd-block w-100' %>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#pizza-carousel"  data-bs-slide="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1792 1792"><path d="M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z" fill="white"
+        stroke-linecap="square"/></svg>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pizza-carousel"  data-bs-slide="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1792 1792"><path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z" fill="white"
+        stroke-linecap="square"/></svg>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <br>
+    <div class="text-center">
+      <%# Dummy links to avoid accidental calls and because I didn't implement the order interface (for obvious reasons) %>
+      <a class='square-btn square-btn-left'>ORDER</a>
+      <a class='square-btn square-btn-right'>CALL</a>
+    </div>
+    <br>
+    <p>
+        SINCE 2013, ATLAS PIZZA HAS BEEN DEDICATED TO SERVING OUR COMMUNITY, BRINGING YOU THE BEST PIES IN TOWN, AS WELL AS BEER AND WINE DELIVERY.
+        ATLAS STRIVES TO BRING PORTLAND TOGETHER THROUGH GOOD FOOD, DRINKS, AND ROCK ’N ROLL HISTORY AT ALL 3 OF OUR UNIQUE LOCATIONS.
+    </p>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <br>
+    <%= image_tag 'banner-delivery', class: 'img-fluid' %>
+    <br><br>
+    <div class='delivery-text'>
+      GIVE US A CALL OR ORDER ONLINE VIA OUR ONLINE ORDERING SYSTEM FOR JUST A $2 DOLLAR DELIVERY FEE.
+      LIVE OUTSIDE OUR RANGE? WE'VE GOT YOU COVERED.
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <br>
+    <%= link_to 'https://www.grubhub.com/', target: '_blank' do %>
+      <%= image_tag 'delivery-grubhub', class: 'img-fluid' %>
+    <% end %>
+    <div class="row">
+      <div class="col-xs-6 col-md-6">
+        <%= link_to 'https://www.trycaviar.com/', target: '_blank' do %>
+          <%= image_tag 'delivery-caviar', class: 'img-fluid' %>
+        <% end %>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <%= link_to 'https://www.postmates.com/', target: '_blank' do %>
+          <%= image_tag 'delivery-postmates', class: 'img-fluid' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-xs-12 col-md-5">
+    <br>
+    <%= image_tag 'weekday-deals', class: 'img-fluid' %>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <br>
+    <%= image_tag 'banner-specials', class: 'img-fluid' %>
+    <br><br>
+    <div class="text-center">
+      <%= image_tag 'mario-smash', class: 'img-fluid smash-img' %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <br>
+    <%= image_tag 'banner-hawthorne-theatre', class: 'img-fluid' %>
+    <br><br>
+    <%= link_to 'https://hawthornetheatre.com/', target: '_blank' do %>
+      <%= image_tag 'hawthorne-theatre', class: 'img-fluid' %>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8 hawthorne-text">
+    ATLAS PIZZA IS ALL ABOUT THE MUSIC, AND WE'RE PROUD TO BE SERVING OUR SIGNATURE SLICES AT ALL YOUR FAVORITE HAWTHORNE SHOWS.
+    AVAILABLE AT THE LOUNGE OR AT COAT CHECK.
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <br>
+    <%= link_to "https://hawthornetheatre.com/", target: "_blank", class: 'hawthorne-img' do %>
+      <%= image_tag 'hawthorne', class:"img-fluid" %>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <br>
+    <%= image_tag 'banner-follow-us', class: "img-fluid" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-xs-12 col-md-5 contact-text">
+    <br>
+    WE LOVE RECEIVING FEEDBACK AND STAYING IN TOUCH WITH OUR CUSTOMERS.
+    STAY UP TO DATE WITH SPECIALS, GIVEAWAYS, AND EVENTS BY FOLLOWING OUR SOCIAL MEDIAS.
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <%= link_to "https://www.instagram.com/atlaspizzapdx/", target: "_blank" do %>
+      <%= image_tag "social-instagram", class: "img-fluid" %>
+    <% end %>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <%= link_to "https://www.facebook.com/atlaspizzaportland/", target: "_blank" do %>
+      <%= image_tag "social-facebook", class: "img-fluid" %>
+    <% end %>
+  </div>
+</div>
+<br>
+<div class="text-center">
+  <br>
+  <%= link_to 'Contact', contact_path, class: "footer-link" %> -
+  <%= link_to 'Partners', partners_path, class: "footer-link" %> -
+  <%= link_to 'Privacy', privacy_path, class: "footer-link" %>
+  <br>
+  © Atlas Pizza, Portland, Oregon
+  <br><br>
+</div>
+<br>

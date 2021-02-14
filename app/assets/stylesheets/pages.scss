@@ -156,6 +156,7 @@ $ap-cream:  #fede67;
 
 // Rows on page, vertical tile layout
 .row {
+  margin: 0 -15px;
 
   .col-xs-12 {
     padding-left: 13px;
@@ -163,11 +164,6 @@ $ap-cream:  #fede67;
 
     @media (min-width: 768px) and (max-width: 991px) {
       padding-left: 12px;
-    }
-  }
-
-  .col-md-8 {
-    @media (min-width: 768px) and (max-width: 991px) {
       width: 100%;
     }
   }
@@ -177,5 +173,95 @@ $ap-cream:  #fede67;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .col-md-6 {
+
+    .carousel-inner {
+      border: 4px solid $ap-dgreen;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+      background: none;
+      border: none;
+    }
+
+    .carousel-control-next {
+      background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    }
+
+    .carousel-control-prev {
+      background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    }
+  }
+
+  .col-md-4 {
+    padding-left: 15px;
+  }
+}
+
+
+.square-btn {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 48px;
+  color: $ap-yellow;
+  background: $ap-green;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $ap-yellow;
+    text-decoration: underline;
+  }
+}
+
+.square-btn-left {
+  margin-left: -5px;
+  margin-right: 10px;
+}
+
+.square-btn-right {
+  margin-left: 10px;
+  margin-right: -5px;
+}
+
+.delivery-text {
+  margin-left: 40px;
+  font-size: 32px;
+}
+
+.smash-img {
+  width: 80%;
+}
+
+.hawthorne-text {
+  font-size: 30px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.hawthorne-img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-text {
+  font-size: 36px;
+}
+
+.footer-link {
+  color: $ap-green;
+  font-size: 24px;
+  text-decoration: none;
+
+  &:hover {
+    color: $ap-green;
+    text-decoration: underline;
   }
 }
