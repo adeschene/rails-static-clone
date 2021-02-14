@@ -5,67 +5,7 @@
     <p>We offer 25% off all orders of 5 pies or more, with 24 hours notice. Fill out the form below, and we’ll contact you immediately!</p>
 
     <p class="form-title">CATERING ORDER FORM</p>
-    <%#div class="FormContainer">
-      <form id="contact-form" method="post" action="/contact-form.php" novalidate="true">
-        <input type="hidden" name="formid" value="CATERING ORDER">
-        <div class="controls">
-          <div class="form-group">
-              <label for="name" class="control-label">YOUR FULL NAME</label>
-              <input id="name" name="name" type="text" required="required" class="form-control">
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-              <label for="phone" class="control-label">PHONE NUMBER</label>
-              <input id="phone" name="phone" type="text" required="required" class="form-control">
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-              <label for="email" class="control-label">EMAIL</label>
-              <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required="required" class="form-control">
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-              <label for="dttm" class="control-label">DATE/TIME OF DELIVERY</label>
-            <div class="input-group date" id="dttmpicker">
-              <input id="dttm" name="dttm" type="text" required="required" class="form-control">
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-              </span>
-            </div>
-            <div class="help-block with-errors"></div>
-          </div>
-          <script type="text/javascript">
-            $(function () {
-              $('#dttmpicker').datetimepicker();
-            });
-          </script>
-          <div class="form-group">
-            <label for="location" class="control-label">LOCATION OF DELIVERY</label>
-            <input id="location" name="location" type="text" required="required" class="form-control">
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-              <label for="notes" class="control-label">NOTES/REQUESTS</label>
-            <textarea id="notes" name="notes" rows="4" class="form-control"></textarea>
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="nospam">Select the pie that has no toppings:</label>
-            <select id="nospam" name="nospam" class="select form-control" aria-describedby="nospamHelpBlock">
-            <option value="greenpepper">Green Pepper</option>
-            <option value="mushroom">Mushroom</option>
-            <option value="cheese">Cheese</option>
-            <option value="pepperoni">Pepperoni</option>
-            </select>
-            <span id="nospamHelpBlock" class="help-block">(This is to prevent spam, which btw is not a topping at Atlas!)</span>
-          </div>
-          <div class="messages"></div>
-          <div class="form-group">
-            <input type="submit" class="btn btn-success disabled" value="SEND">
-          </div>
-        </div>
-      </form>
-    </div%>
+    <%# render 'forms/catering_form' %>
   </div>
   <div class="col-lg-1 col-xl-2"></div>
 </div>

@@ -24,8 +24,14 @@
     <div class="collapse navbar-collapse-ap" id="navbarTogglerLinks">
       <div class="nav-list-container">
         <ul class="navbar-nav-ap">
+          <%# Only render a homepage link if not on the homepage %>
+          <% unless current_page?(controller: 'pages', action: 'home') %>
+            <li class="nav-item-ap">
+              <%= link_to "Home Page", root_path, class: "nav-link-ap" %>
+            </li>
+          <% end %>
           <li class="nav-item-ap">
-            <%= link_to "ORDER ONLINE", root_path, class: "nav-link-ap" %>
+            <a class="nav-link-ap">ORDER ONLINE</a>
           </li>
           <li class="nav-item-ap">
             <%= link_to "Menu", menu_path, class: "nav-link-ap" %>
