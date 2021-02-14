@@ -21,23 +21,25 @@
       </button>
     </div>
     <div class="collapse navbar-collapse-ap" id="navbarTogglerLinks">
-      <ul class="navbar-nav-ap">
-        <li class="nav-item-ap">
-          <%= link_to "ORDER ONLINE", root_path, class: "nav-link-ap" %>
-        </li>
-        <li class="nav-item-ap">
-          <%= link_to "Menu", menu_path, class: "nav-link-ap" %>
-        </li>
-        <li class="nav-item-ap">
-          <%= link_to "Community", community_path, class: "nav-link-ap" %>
-        </li>
-        <li class="nav-item-ap">
-          <%= link_to "Catering", catering_path, class: "nav-link-ap" %>
-        </li>
-        <li class="nav-item-ap">
-          <%= link_to "Contact", contact_path, class: "nav-link-ap" %>
-        </li>
-      </ul>
+      <div class="nav-list-container">
+        <ul class="navbar-nav-ap">
+          <li class="nav-item-ap">
+            <%= link_to "ORDER ONLINE", root_path, class: "nav-link-ap" %>
+          </li>
+          <li class="nav-item-ap">
+            <%= link_to "Menu", menu_path, class: "nav-link-ap" %>
+          </li>
+          <li class="nav-item-ap">
+            <%= link_to "Community", community_path, class: "nav-link-ap" %>
+          </li>
+          <li class="nav-item-ap">
+            <%= link_to "Catering", catering_path, class: "nav-link-ap" %>
+          </li>
+          <li class="nav-item-ap">
+            <%= link_to "Contact", contact_path, class: "nav-link-ap" %>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

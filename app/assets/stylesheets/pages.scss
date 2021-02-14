@@ -103,26 +103,29 @@ $ap-cream:  #fede67;
       border-top: 1px solid $ap-cream;
       margin: 0 -15px;
 
-      .navbar-nav-ap {
-        float: right;
-        margin: 7.5px 0 7.5px -15px;
-        list-style: none;
-        padding-left: 0;
+      .nav-list-container {
+        display: flex;
+        justify-content: flex-end;
 
-        .nav-item-ap {
-          float: none;
-          width: 100%;
-          padding: 4.5px 0;
+        .navbar-nav-ap {
+          margin: 7.5px 0 7.5px -15px;
+          list-style: none;
+          padding-left: 0;
 
-          &:hover {
-            background: $ap-dgreen;
-          }
+          .nav-item-ap {
+            width: 100%;
+            padding: 4.5px 0;
 
-          .nav-link-ap {
-            color: $ap-cream;
-            text-decoration: none;
-            padding: 10px 15px;
-            line-height: 20px;
+            &:hover {
+              background: $ap-dgreen;
+            }
+
+            .nav-link-ap {
+              color: $ap-cream;
+              text-decoration: none;
+              padding: 10px 15px;
+              line-height: 20px;
+            }
           }
         }
       }
