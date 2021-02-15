@@ -136,7 +136,6 @@ $ap-cream:  #fede67;
           // Container for nav links
           .nav-item-ap {
             width: 100%;
-            padding: 4.5px 0;
 
             &:hover {
               background: $ap-dgreen;
@@ -148,6 +147,7 @@ $ap-cream:  #fede67;
               padding: 10px 15px;
               line-height: 20px;
               cursor: pointer;
+              display: block;
             }
           }
         }
