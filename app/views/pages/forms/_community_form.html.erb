@@ -1,78 +1,30 @@
-<% form_tag '/pages/do_test' do %>
-  <div class="form-group">
-    <%=label_tag 'YOUR FULL NAME' %>
-    <%=text_field_tag 'name' %>
-  </div>
+<% $TOPPINGS = ['Green Pepper', 'Mushroom', 'Cheese', 'Pepperoni'] %>
 
-  <div class="form-group">
-    <%=label_tag 'ASSOCIATED SCHOOL' %>
-    <%=text_field_tag 'school' %>
-  </div>
-
-  <div class="form-group">
-    <%=label_tag 'PHONE NUMBER' %>
-    <%=text_field_tag 'phone' %>
-  </div>
-
-  <div class="form-group">
-    <%=label_tag 'EMAIL' %>
-    <%=text_field_tag 'email' %>
-  </div>
-
-  <div class="form-group">
-    <%=label_tag 'Select the pie that has no toppings:' %>
-    <%=select_tag 'nospam' %>
-    <span id="nospamHelpBlock" class="help-block">(This is to prevent spam, which btw is not a topping at Atlas!)</span>
-  </div>
-
-  <div class="form-group">
-    <%= submit_tag 'SEND', class: "btn btn-success disabled" %>
-  </div>
-<% end %>
-<%# div class="form-container">
-
-  <form id="contact-form" method="post" action="/contact-form.php" novalidate="true">
-
-    <input type="hidden" name="formid" value="P.I.E. Program Submission">
-
-    <div class="controls">
-
-      <div class="form-group">
-        <label for="name" class="control-label">YOUR FULL NAME</label>
-        <input id="name" name="name" type="text" required="required" class="form-control">
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label for="school" class="control-label">ASSOCIATED SCHOOL</label>
-        <input id="school" name="school" type="text" required="required" class="form-control">
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label for="phone" class="control-label">PHONE NUMBER</label>
-        <input id="phone" name="phone" type="text" required="required" class="form-control">
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label for="email" class="control-label">EMAIL</label>
-        <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required="required" class="form-control">
-        <div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-        <label class="control-label" for="nospam">Select the pie that has no toppings:</label>
-        <select id="nospam" name="nospam" required="required" class="select form-control" aria-describedby="nospamHelpBlock">
-          <option value="greenpepper">Green Pepper</option>
-          <option value="mushroom">Mushroom</option>
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-        </select>
-        <span id="nospamHelpBlock" class="help-block">(This is to prevent spam, which btw is not a topping at Atlas!)</span>
-      </div>
-      <div class="messages"></div>
-      <div class="form-group">
-        <input type="submit" class="btn btn-success disabled" value="SEND">
-      </div>
-
-    </div><!-- end controls -->
-
+<div class="form-container">
+  <form>
+    <div class="form-group">
+      <%= label_tag 'name', 'YOUR FULL NAME', class: 'form-label' %>
+      <%= text_field_tag 'name', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'school', 'ASSOCIATED SCHOOL', class: 'form-label' %>
+      <%= text_field_tag 'school', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'phone', 'PHONE NUMBER', class: 'form-label' %>
+      <%= text_field_tag 'phone', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'email', 'EMAIL', class: 'form-label' %>
+      <%= text_field_tag 'email', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'nospam', 'Select the pie that has no toppings:', class: 'form-label' %>
+      <%= select_tag 'nospam', options_for_select($TOPPINGS), class: 'form-select form-control' %>
+      <span id="nospamHelpBlock" class="help-block">(This is to prevent spam, which btw is not a topping at Atlas!)</span>
+    </div>
+    <div class="form-group">
+      <a class="btn btn-success form-btn disabled">SEND</a>
+    </div>
   </form>
-</div %>
+</div>

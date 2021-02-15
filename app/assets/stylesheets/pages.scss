@@ -1,15 +1,17 @@
 // Atlas Pizza's color palate
 $ap-green:  #4d731d;
+$ap-mgreen: #4c721d;
 $ap-dgreen: #1f4718;
 $ap-yellow: #ffd204;
 $ap-cream:  #fede67;
 
-// Logo and links showed on large screens
+// Main header styling (large screens only)
 .site-nav {
   font-family: 'Voltaire', sans-serif;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
 
+  // Don't display at all on smaller screens
   @media only screen and (max-width: 767px) {
     display: none;
   }
@@ -42,8 +44,8 @@ $ap-cream:  #fede67;
   }
 }
 
-// Navbar shown on small screens
-// Custom navbar to match old bootstrap version
+// Secondary navbar styling (small screens only)
+// Custom navbar to match older bootstrap
 .navbar-ap {
   background: $ap-green;
   font-weight: bold;
@@ -154,7 +156,7 @@ $ap-cream:  #fede67;
   }
 }
 
-// Rows on page, vertical tile layout
+// Row/column styling
 .row {
   margin: 0 -15px;
 
@@ -223,19 +225,92 @@ $ap-cream:  #fede67;
   display: block;
 }
 
-.collage-link {
-  text-decoration: none;
-  color: $ap-green;
+// Contact page styles
+.contact-btn {
+  width: 100%;
+  max-width: 720px;
+}
 
-  &:hover {
-    color: $ap-green;
-    text-decoration: underline;
+.contact-btn-spacer {
+  line-height: 10px;
+}
+
+.location-header {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+// Partnerships/privacy page styles
+.page-title {
+  font-size: 45px;
+}
+
+// Form styles
+.form-container {
+  border: 8px solid $ap-mgreen;
+  padding: 10px;
+
+  .form-group {
+    margin-bottom: 15px;
+
+    .form-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-control, .form-select {
+      padding: 6px 12px;
+      height: 34px;
+      font-size: 14px;
+
+      &:focus {
+        border-color: #66afe9;
+        outline: none;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      }
+    }
+
+    .form-text-area {
+      height: auto;
+      resize: both;
+    }
+
+    .form-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+
+    .help-block {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      color: #737373;
+    }
   }
 }
 
 // Miscellaneous styles
 p {
   margin-bottom: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+div {
+  a {
+    color: $ap-green;
+    text-decoration: none;
+
+    &:hover {
+      color: $ap-green;
+      text-decoration: underline;
+    }
+  }
 }
 
 .square-btn {
@@ -305,12 +380,5 @@ p {
 }
 
 .footer-link {
-  color: $ap-green;
   font-size: 24px;
-  text-decoration: none;
-
-  &:hover {
-    color: $ap-green;
-    text-decoration: underline;
-  }
 }
